@@ -32,7 +32,7 @@ sub webPages {
 sub handleHttpProxy {
 	my ($httpClient, $response, $func) = @_;
 
-	my $url = $response->{'_request'}->{'_uri'};
+	my $url = uri_unescape( $response->{'_request'}->{'_uri'} );
 	$url =~ s/\/plugins\/httpproxy\?//;
 	
 	$url =~ m|([^/]+)/?$|;
