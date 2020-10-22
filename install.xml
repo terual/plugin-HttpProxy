@@ -1,0 +1,14 @@
+<?xml version='1.0' standalone='yes'?>
+<extension>
+  <name>HttpProxy</name>
+  <defaultState>enabled</defaultState>
+  <description>HttpProxy</description>
+  <module>Plugins::HttpProxy::Plugin</module>
+  <targetApplication>
+    <id>SlimServer</id>
+    <minVersion>7.9</minVersion>
+    <maxVersion>8.*</maxVersion>
+  </targetApplication>
+  <type>2</type>
+  <version>0.1</version>
+</extension>
